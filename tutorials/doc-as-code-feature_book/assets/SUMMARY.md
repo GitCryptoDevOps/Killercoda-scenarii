@@ -1,2 +1,0 @@
-# Gherkin tests
-Gherkin tests.

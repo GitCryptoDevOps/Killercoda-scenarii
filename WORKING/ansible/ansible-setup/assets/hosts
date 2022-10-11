@@ -1,7 +1,0 @@
-[dbseservers]
-mydbserver1.company.com
-mydbserver2.company.com
-
-[webservers]
-mywebserver1.company.com
-mywebserver2.company.com

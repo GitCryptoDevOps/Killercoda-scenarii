@@ -1,6 +1,0 @@
-tasks:     
-  - name: Can we use Ansible to Install nginx web server       
-    apt: >
-      pkg=nginx 
-      state=installed 
-      update_cache=true

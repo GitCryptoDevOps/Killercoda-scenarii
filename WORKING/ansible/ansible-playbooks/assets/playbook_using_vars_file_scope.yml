@@ -1,6 +1,0 @@
----
-- hosts: all
-  tasks:
-    - name: include default step variables
-      include_vars: my_vars_file.yml
-      ping: $ping_server

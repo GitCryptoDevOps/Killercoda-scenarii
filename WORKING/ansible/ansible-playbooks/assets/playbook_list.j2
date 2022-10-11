@@ -1,5 +1,0 @@
-all_hosts += [
-{% for host in servers_to_configure %}
-  "{{ hostvars[host].ansible_default_ipv6.address }}
-{% endfor %}
-]

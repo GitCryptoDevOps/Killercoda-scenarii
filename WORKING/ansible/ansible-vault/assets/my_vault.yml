@@ -1,4 +1,0 @@
-integer: 25
-string: "Hello Ansible Users"
-float: 25.0
-boolean: Yes

@@ -1,6 +1,0 @@
-- hosts: all
-  vars:
-    foo: "{{ lookup('env', 'FOO' }}"
-  tasks:
-    - name: Copy file
-      copy: src="{{ foo }}" dest=/some/path mode=0775 owner=user group=user

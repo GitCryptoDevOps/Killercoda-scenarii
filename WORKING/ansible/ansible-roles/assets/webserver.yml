@@ -1,8 +1,0 @@
----
-- name: Install Apache HTTPD Server Packages
-  yum: name={{ item }} state=installed
-  with_items:
-   - httpd
-
-- name: Start Http Service
-  service: name=http state=started enabled=yes

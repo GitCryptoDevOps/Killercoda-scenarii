@@ -1,8 +1,0 @@
-east_coast_host_local: virginia
-west_coast_host_local: oregon
-definitions:
-- servers: web
-   instance: apache
-- servers: db
-   instance: cassandra
-ping_server: 192.168.10.10

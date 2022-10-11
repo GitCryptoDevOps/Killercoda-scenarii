@@ -1,4 +1,0 @@
-- git:
-  repo: https://github.com/foo/implementingdevops-examples.git
-  dest: /src/implementingdevops-examples
-  archive: /tmp/examples.zip

@@ -1,7 +1,0 @@
-[webservers]
-webserver1.local
-webserver2.local
-
-[dbservers]
-dbserver1.local
-dbserver2.local

@@ -1,5 +1,0 @@
-tasks:
- - include: myincludedplaybook.yml user=dbuser
- 
- - debug:
-   msg: "System {{ user }} user is AWESOME!"

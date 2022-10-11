@@ -1,7 +1,0 @@
----
-- name: Hello World Iterator within Ansible
-  user: root
-  hosts: all
-  tasks:
-    - debug:
-        msg: "{% for x in range (0,10) %} {{x}} {% endfor %}"

@@ -1,2 +1,0 @@
-- name: reboot the servers
-  action: command /sbin/reboot -t now

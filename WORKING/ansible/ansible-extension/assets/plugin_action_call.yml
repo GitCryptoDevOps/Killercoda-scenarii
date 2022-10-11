@@ -1,2 +1,0 @@
-- name: Special Action to be run on the master
-  action: myaction foo=bar

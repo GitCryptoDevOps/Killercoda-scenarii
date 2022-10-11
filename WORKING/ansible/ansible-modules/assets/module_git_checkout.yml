@@ -1,4 +1,0 @@
-- git:
- repo: 'https://mygitserver.com/the/path/to/repo.git'
- dest: /opt/sourcecode
- version: release-0.23

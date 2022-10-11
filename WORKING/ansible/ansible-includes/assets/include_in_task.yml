@@ -1,6 +1,0 @@
-- include: myplaybook.yml
-- name: some play
-  hosts: all
-  tasks:
-    - debug: msg=hello
-    - include: include_in_task_tasks.yml

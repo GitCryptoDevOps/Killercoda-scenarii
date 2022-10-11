@@ -1,4 +1,0 @@
-- name: some additional play
-  hosts: all
-  tasks:
-    - debug: msg=hello I am an included file

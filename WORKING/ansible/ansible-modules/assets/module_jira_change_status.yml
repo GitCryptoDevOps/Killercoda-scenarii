@@ -1,8 +1,0 @@
-- name: Mark the issue as resolved
- jira:
- uri: "http://pathtojira"
- username: '{{ user }}'
- password: '{{ pass }}'
- issue: '{{ issue.meta.key }}'
- operation: transition
- status: Resolved

@@ -1,6 +1,0 @@
-- name:
-  file:
-    path: /opt/myconfiguration.conf
-    owner: bob
-    group: admin
-    mode: 0644

@@ -1,3 +1,0 @@
-Terraform can control locally installed Docker. This allows to trigger dynamic Docker image updates, to execute containers on certain events, ...
-
-Let's deploy a Nginx webserver display a `Helloworld` page.
