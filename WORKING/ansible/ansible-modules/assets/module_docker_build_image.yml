@@ -1,0 +1,6 @@
+- name: Build a docker image
+  docker_image: >
+  name=docker-image-created-by-ansible
+  tag=ansibleexample1
+  path=/tmp/site
+  state=present

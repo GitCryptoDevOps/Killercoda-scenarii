@@ -1,0 +1,6 @@
+tasks:
+  - name: copy files
+    copy: src={{ item }} dest=/opt/{{ item }}
+    with_items:
+      - foo
+      - bar

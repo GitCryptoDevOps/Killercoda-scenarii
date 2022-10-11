@@ -1,0 +1,41 @@
+{
+  "title": "Kubernetes - Les conteneurs Init",
+  "description": "Apprendre à utiliser un conteneur Init",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Ce cours a été créé par Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Etape 1 - Utilisation d'un conteneur Init",
+        "text": "step1.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 2 - Utilisation des init containers pour attendre l'initialisation de services",
+        "text": "step2.md",
+        "code": "init.sh"
+      }
+    ],
+    "assets": {
+      "client": [
+        {"file": "pod.yaml", "target": "~/"}, 
+        {"file": "services.yaml", "target": "~/"}, 
+        {"file": "deploy.yaml", "target": "~/"}, 
+        {"file": "wait-for-kubernetes.sh", "target": "~/", "chmod": "+x"}
+      ]
+    }
+  },
+  "environment": {
+    "showdashboard": false,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}

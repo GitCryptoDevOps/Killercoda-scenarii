@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Markdown Example</title>
+
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/white.css" id="theme">
+
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+                <!--<section data-markdown="vpc-create.md" data-separator="---"></section>-->
+                <section data-markdown>
+                    <script type="text/template">
+						# Create a VPC
+						-   Go to the VPC console,
+						![](./media/image1.png)
+						---
+						-   Select the region,
+						![](./media/image1.png)
+						---
+						-   Click on VPCs,
+						![](./media/image1.png)
+						---
+						-   Click on Create VPC,
+						![](./media/image1.png)
+						---
+						-   Enter the name of the VPC,
+						![](./media/image2.png)
+						---
+						-   Refer to the CIDR,
+						![](./media/image2.png)
+						---
+						-   Possibly enter the description,
+						![](./media/image2.png)
+						-   Click on OK.
+						---
+						![](./media/image2.png)
+						---
+						![](./media/image3.png)
+						
+											</script>
+                </section>
+
+            </div>
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+
+		</script>
+
+	</body>
+</html>

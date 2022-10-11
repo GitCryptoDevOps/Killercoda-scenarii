@@ -1,0 +1,51 @@
+{
+  "title": "Git Work remotely",
+  "description": "",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Lessons created by Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "*", "target": "/root"}
+      ]
+    },
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5",
+        "text": "step5.md"
+      }
+    ]
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [
+      {"name": "graph.png", "href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/graph.png"}
+    ],
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n",
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}

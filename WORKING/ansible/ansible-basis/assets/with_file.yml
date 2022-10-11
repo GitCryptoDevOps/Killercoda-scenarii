@@ -1,0 +1,10 @@
+---
+- name: Say hello to our favorite Looney Toons
+  hosts: all
+  tasks:
+    - name: Say Hello to Our Favorite Looney Toons
+      debug:
+        msg: "{{ item }}"
+        with_file:
+          - myfile1.txt
+          - myfile2.txt

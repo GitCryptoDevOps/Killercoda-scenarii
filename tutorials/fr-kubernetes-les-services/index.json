@@ -1,0 +1,48 @@
+{
+  "title": "Kubernetes - Les services",
+  "description": "Apprendre à créer un service et à faire une mise à jour",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Ce cours a été créé par Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Etape 1 - Création d'un service",
+        "text": "step1.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 2 - Création d'un service de type ClusterIP",
+        "text": "step2.md"
+      },
+      {
+        "title": "Etape 3 - Création d'un service de type NodePort",
+        "text": "step3.md"
+      }
+    ],
+    "assets": {
+      "client": [
+        {"file": "nginx-pod.yaml", "target": "~/"}, 
+        {"file": "tester-pod.yaml", "target": "~/"}, 
+        {"file": "nginx-clusterip.yaml", "target": "~/"}, 
+        {"file": "nginx-nodeport.yaml", "target": "~/"}, 
+        {"file": "wait-for-kubernetes.sh", "target": "~/", "chmod": "+x"}
+      ]
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "terminal",
+    "dashboards": [
+      {"name": "Accès à Nginx (NodePort)", "port": 31000}
+    ],
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}

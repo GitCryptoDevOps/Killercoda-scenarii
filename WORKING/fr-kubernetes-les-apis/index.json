@@ -1,0 +1,53 @@
+{
+  "title": "Kubernetes - Les APIs de Kubernetes",
+  "description": "Apprendre à utiliser les APIs de Kubernetes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Ce cours a été créé par Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Etape 1 - Les APIs",
+        "text": "step1.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 2 - La gestion des droits des utilisateurs et des groupes",
+        "text": "step2.md"
+      },
+      {
+        "title": "Etape 3 - kubectl",
+        "text": "step3.md"
+      },
+      {
+        "title": "Etape 4 - Activation de l'autocompletion Bash",
+        "text": "step4.md"
+      },
+      {
+        "title": "Etape 5 - Utilisation de curl",
+        "text": "step5.md"
+      },
+      {
+        "title": "Etape 6 - etcdctl",
+        "text": "step6.md"
+      }
+    ],
+    "assets": {
+      "client": [
+        {"file": "wait-for-kubernetes.sh", "target": "~/", "chmod": "+x"}
+      ]
+    }
+  },
+  "environment": {
+    "showdashboard": false,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}

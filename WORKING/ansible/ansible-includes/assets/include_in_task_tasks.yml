@@ -1,0 +1,4 @@
+- name: some task
+  command: /bin/ls
+- name: some other tasks
+  command: /bin/ps -ef

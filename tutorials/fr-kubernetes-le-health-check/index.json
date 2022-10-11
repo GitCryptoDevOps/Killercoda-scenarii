@@ -1,0 +1,48 @@
+{
+  "title": "Kubernetes - Le health check",
+  "description": "Apprendre à configurer un health check",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Ce cours a été créé par Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Etape 1 - Le health check",
+        "text": "step1.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 2 - Créer un pod avec un healhcheck livenessProbe négatif",
+        "text": "step2.md"
+      },
+      {
+        "title": "Etape 3 - Créer un pod avec un healhcheck livenessProbe positif",
+        "text": "step3.md"
+      },
+      {
+        "title": "Etape 4 - Créer un pod avec un healhcheck readinessProbe positif",
+        "text": "step4.md"
+      }
+    ],
+    "assets": {
+      "client": [
+        {"file": "liveness-probe-nothealthy-pod.yaml", "target": "~/"}, 
+        {"file": "liveness-probe-healthy-pod.yaml", "target": "~/"}, 
+        {"file": "readiness-probe-healthy-pod.yaml", "target": "~/"}, 
+        {"file": "wait-for-kubernetes.sh", "target": "~/", "chmod": "+x"}
+      ]
+    }
+  },
+  "environment": {
+    "showdashboard": false,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}

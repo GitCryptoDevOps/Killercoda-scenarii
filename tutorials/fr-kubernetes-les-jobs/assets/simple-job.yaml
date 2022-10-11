@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: simple-job
+spec:
+  activeDeadlineSeconds: 60
+  template:
+    spec:
+      containers:
+      - name: ubuntu
+        image: ubuntu
+        command: ["ls", "-l"]
+      restartPolicy: Never

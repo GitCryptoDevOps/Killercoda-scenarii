@@ -1,0 +1,7 @@
+var_name:
+- group:
+    - variable1
+    - variable2
+- group:
+    - variable1
+    - variable2

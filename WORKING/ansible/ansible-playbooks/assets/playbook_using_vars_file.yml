@@ -1,0 +1,8 @@
+---
+- hosts: all
+  vars_files:
+    - my_vars_file.yml
+
+  tasks:
+    - name: ping target server
+      ping: $ping_server

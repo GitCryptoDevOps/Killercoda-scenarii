@@ -1,0 +1,6 @@
+- jenkins_job:
+    name: foo
+    password: my_admin
+    state: absent
+    url: http://pathtojenkinsurl:8080
+    user: admin

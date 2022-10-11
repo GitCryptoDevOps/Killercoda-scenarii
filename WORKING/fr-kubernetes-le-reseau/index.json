@@ -1,0 +1,60 @@
+{
+  "title": "Kubernetes - Le réseau",
+  "description": "Apprendre comment utiliser le réseau",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Ce cours a été créé par Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Etape 1 - Le réseau Kubernetes",
+        "text": "step1.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 2 - Gestion du CNI",
+        "text": "step2.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 3 - Les plugins réseau",
+        "text": "step3.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 4 - Le DNS",
+        "text": "step4.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 5 - Gestion des stratégies réseau",
+        "text": "step5.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 6 - Remplacement du plugin par défaut dans le cluster avec le plugin réseau Calico",
+        "text": "step6.md",
+        "code": "init.sh"
+      }
+    ],
+    "assets": {
+      "client": [
+        {"file": "network-policy.yaml", "target": "~/"},
+        {"file": "busybox.yaml", "target": "~/"},
+        {"file": "wait-for-kubernetes.sh", "target": "~/", "chmod": "+x"}
+      ]
+    }
+  },
+  "environment": {
+    "showdashboard": false,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}

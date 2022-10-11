@@ -1,0 +1,73 @@
+{
+  "title": "Kubernetes - Les noeuds",
+  "description": "Apprendre à planifier un Pod sur un noeud",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Ce cours a été créé par Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Etape 1 - Les noeuds",
+        "text": "step1.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 2 - Reboot des noeuds du cluster",
+        "text": "step2.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 3 - Retrait de nodes du cluster",
+        "text": "step3.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 4 - Analyse et surveillance de l'état du noeud",
+        "text": "step4.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 5 - Utilisation de kubectl drain et cordon",
+        "text": "step5.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 6 - Configuration des Pods statiques",
+        "text": "step6.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 7 - Gestion de la base de données etcd",
+        "text": "step7.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 8 - Planification d'un pod",
+        "text": "step8.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 9 - Accès au serveur d'API de Kubernetes",
+        "text": "step9.md"
+      }
+    ],
+    "assets": {
+      "client": [
+        {"file": "worker4-apache.yaml", "target": "~/"}, 
+        {"file": "wait-for-kubernetes.sh", "target": "~/", "chmod": "+x"}
+      ]
+    }
+  },
+  "environment": {
+    "showdashboard": false,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}

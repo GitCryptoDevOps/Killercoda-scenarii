@@ -1,0 +1,62 @@
+{
+  "title": "Kubernetes - Les volumes",
+  "description": "Apprendre à créer et utiliser un volume",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Ce cours a été créé par Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Etape 1 - Les volumes",
+        "text": "step1.md",
+        "code": "init.sh"
+      },
+      {
+        "title": "Etape 2 - Le PersistentVolume (PV)",
+        "text": "step2.md"
+      },
+      {
+        "title": "Etape 3 - Le PersistentVolumeClaim (PVC)",
+        "text": "step3.md"
+      },
+      {
+        "title": "Etape 4 - Le type de PV EmptyDir",
+        "text": "step4.md"
+      },
+      {
+        "title": "Etape 5 - Le PV hostPath",
+        "text": "step5.md"
+      },
+      {
+        "title": "Etape 6 - Exemple",
+        "text": "step6.md"
+      }
+    ],
+    "assets": {
+      "client": [
+        {"file": "hostpath-pv.yaml", "target": "~/"}, 
+        {"file": "hostpath-pod.yaml", "target": "~/"}, 
+        {"file": "emptydir-pod.yaml", "target": "~/"}, 
+        {"file": "mongo-pvc.yaml", "target": "~/"}, 
+        {"file": "pvc.yaml", "target": "~/"}, 
+        {"file": "pv-nfs.yaml", "target": "~/"}, 
+        {"file": "pvc-nfs.yaml", "target": "~/"}, 
+        {"file": "pv-pod.yaml", "target": "~/"}
+
+        {"file": "wait-for-kubernetes.sh", "target": "~/", "chmod": "+x"}
+      ]
+    }
+  },
+  "environment": {
+    "showdashboard": false,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}

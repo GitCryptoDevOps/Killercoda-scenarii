@@ -1,0 +1,2 @@
+- name: Creates a directory
+  file: path=/opt/helloWorld state=directory

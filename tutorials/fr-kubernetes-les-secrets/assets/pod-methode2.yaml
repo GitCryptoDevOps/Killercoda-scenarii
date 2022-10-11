@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: with-secrets
+spec:
+  containers:
+  - name: helloworld
+    image: devopstestlab/nginx-helloworld
+    volumeMounts:
+    - name: mysecrets
+      mountPath: /etc/mysecrets
+      readOnly: true
+  volumes:
+  - name: mysecrets
+    secret:
+      secretName: mysecrets-file
+      items:
+      - key: username.txt
+        path: service/username
+      - key: password.txt
+        path: service/password

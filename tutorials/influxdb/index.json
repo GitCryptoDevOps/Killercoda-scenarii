@@ -1,0 +1,48 @@
+{
+  "title": "InfluxDB",
+  "description": "",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Lessons created by Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "*", "target": "/root"}
+      ]
+    },
+    "steps": [
+      {
+        "title": "Installing InfluxDB",
+        "text": "step1.md"
+      },
+      {
+        "title": "Setting the configuration",
+        "text": "step2.md"
+      },
+      {
+        "title": "Creating the database",
+        "text": "step3.md"
+      },
+      {
+        "title": "Adding data",
+        "text": "step4.md"
+      },
+      {
+        "title": "Query data",
+        "text": "step5.md"
+      }
+    ]
+  },
+  "environment": {
+    "showdashboard": false,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}

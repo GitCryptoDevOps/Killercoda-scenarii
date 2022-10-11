@@ -1,0 +1,9 @@
+---
+- hosts: all
+
+  tasks:  
+    - name: Add the_user2 User to the System
+      user: 
+        name: the_user2
+        comment: "the_user2 has left"
+        groups: the_users

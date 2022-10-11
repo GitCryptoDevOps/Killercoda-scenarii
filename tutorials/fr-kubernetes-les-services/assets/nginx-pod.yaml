@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    app: nginx-helloworld
+spec:
+  containers:
+  - name: nginx-helloworld
+    image: devopstestlab/nginx-helloworld
+    ports:
+    - containerPort: 80

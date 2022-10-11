@@ -1,0 +1,2 @@
+tasks:
+  - include: myincludedplaybook.yml user=dbuser

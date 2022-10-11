@@ -1,0 +1,10 @@
+---
+ - name: How to use variables in Jinja2 Loops
+   hosts: localhost
+   connection: local
+   vars_files:
+     - vars.yml
+   gather_facts: no
+   tasks:
+     - name: This task uses a j2 template which has a series of loops
+       template: src=./ourloop.j2 dest=./output.txt

@@ -1,0 +1,6 @@
+- name: Hello World
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Tell the Ansible Community Hello
+      mymodule: param1=hello

@@ -1,0 +1,41 @@
+{
+  "title": "Kubernetes - Le réseau des pods des noeuds",
+  "description": "Apprendre comment utiliser le réseau des pods et des noeuds",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Ce cours a été créé par Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "steps": [
+      {
+        "title": "Etape 1 - Le réseau au niveau des Pods",
+        "text": "step1.md"
+      },
+      {
+        "title": "Etape 2 - Le réseau au niveau des Services",
+        "text": "step2.md"
+      },
+      {
+        "title": "Etape 3 - Exemple",
+        "text": "step3.md"
+      }
+    ],
+    "assets": {
+      "client": [
+        {"file": "network-policy.yaml", "target": "~/"},
+        {"file": "wait-for-kubernetes.sh", "target": "~/", "chmod": "+x"}
+      ]
+    }
+  },
+  "environment": {
+    "showdashboard": false,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}

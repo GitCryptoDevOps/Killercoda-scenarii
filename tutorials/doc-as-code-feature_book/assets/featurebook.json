@@ -1,0 +1,13 @@
+{
+  "title": "Gherkin tests",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "firstName": "My firstname",
+      "lastName": "My lastname",
+      "email": "myemail@gmail.com"
+    }
+  ],
+  "contributors": [
+  ]
+}

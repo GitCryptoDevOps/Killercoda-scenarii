@@ -1,0 +1,6 @@
+- action:
+    /usr/bin/tail -n 1 /var/log/auth.log 
+  register: result
+  until: result.stdout.find("Cannot create session") != -1
+  retries: 100
+  delay: 1

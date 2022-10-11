@@ -1,0 +1,36 @@
+{
+  "title": "PlantUML",
+  "description": "",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Lessons created by Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "*", "target": "/root"}
+      ]
+    },
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md",
+        "code": "init.sh"
+      }
+    ]
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [
+      {"name": "demo.png", "href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/demo.png"}
+    ],
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n",
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}

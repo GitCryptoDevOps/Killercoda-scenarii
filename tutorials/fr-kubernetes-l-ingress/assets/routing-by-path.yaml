@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+  name: by-path
+spec:
+  rules:
+  - host: mywebsite.com
+    http:
+      paths:
+      - path: /www
+        backend:
+          serviceName: www
+          servicePort: 80

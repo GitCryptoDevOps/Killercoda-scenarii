@@ -1,0 +1,8 @@
+---
+- hosts: all
+
+  tasks:
+    - name: Add the_user User to the System
+      user: 
+        name: my_user
+        comment: "the_user arrived"

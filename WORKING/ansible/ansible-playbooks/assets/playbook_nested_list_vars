@@ -1,0 +1,14 @@
+---
+places:
+ - name: USA
+   capital: Blue
+ - name: Great Britan
+   capital: Yellow
+ - name: Itally
+   capital: Blue
+ - name: Mexico
+   capital: Yellow
+ - name: Ireland
+   capital: Yellow
+ - name: Amsterdam
+   capital: Orange

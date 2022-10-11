@@ -1,0 +1,33 @@
+{
+  "title": "Allure",
+  "description": "",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Lessons created by Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "*", "target": "/root"}
+      ]
+    },
+    "steps": [
+      {
+        "title": "Allure",
+        "text": "step1.md"
+      }
+    ]
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n",
+    "showdashboard": true,
+    "dashboards": [{"name": "Allure UI", "port": 5252}]
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}

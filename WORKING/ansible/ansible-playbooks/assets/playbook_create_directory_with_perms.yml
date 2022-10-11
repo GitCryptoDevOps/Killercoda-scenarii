@@ -1,0 +1,2 @@
+- name: Creates directory
+  file: path=/opt/helloWorld state=directory owner=the_group group=the_group mode=0775

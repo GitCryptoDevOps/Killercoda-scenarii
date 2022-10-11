@@ -1,0 +1,13 @@
+---
+- name: Demo of nested loops using with_nested
+  hosts: all
+  remote_user: root
+  vars:
+    listA: [1, 2]
+    listB: [a, b]
+  tasks:
+    - name: Say Hello using Nested Loops
+      debug: msg=“The values in the array are {{item[0]}} and {{item[1]}}"
+      with_nested:
+        - listA
+        - listB

@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: helloworld-statefulset
+spec:
+  serviceName: helloworld-service
+  replicas: 3
+  selector:
+    matchLabels:
+      app: helloworld-statefulset
+  template:
+    metadata:
+      labels:
+        app: helloworld-statefulset
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: nginx-helloworld
+        image: devopstestlab/nginx-helloworld
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: volumes-data
+          mountPath: /data
+  volumeClaimTemplates:
+  - metadata:
+      name: volumes-data
+    spec:
+      accessModes: [ ReadWriteOnce ]
+      resources:
+        requests:
+          storage: 1Gi
+  updateStrategy:
+    type: RollingUpdate

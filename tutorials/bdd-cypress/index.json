@@ -1,0 +1,40 @@
+{
+  "title": "Cypress BDD",
+  "description": "",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "credits": "Courses created by Bruno Delb (http://www.DevOpsTestLab.com)"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "*", "target": "/root"}
+      ]
+    },
+    "steps": [
+      {
+        "title": "Installing Cypress",
+        "text": "step1.md"
+      },
+      {
+        "title": "Setting up the tests",
+        "text": "step2.md"
+      },
+      {
+        "title": "Running the tests",
+        "text": "step3.md"
+      }
+    ]
+  },
+  "environment": {
+    "showdashboard": false,
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mVisitez mon blog http://www.DevOpsTestLab.com - Bruno Delb\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}

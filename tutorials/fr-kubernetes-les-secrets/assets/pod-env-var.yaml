@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: with-secrets
+spec:
+  containers:
+  - name: helloworld
+    image: devopstestlab/nginx-helloworld
+    env:
+    - name: MY_SECRET
+      valueFrom:
+        secretKeyRef:
+          name: mysecrets
+          key: mysecret

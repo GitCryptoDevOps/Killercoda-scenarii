@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites duration="1">
+    <testsuite failures="0" name="My test suite 1" package="My package 1" tests="3" time="0.6">
+        <testcase classname="my_class1" name="My class 1" time="0.1"/>
+        <testcase classname="my_class2" name="My class 2" time="0.2"/>
+        <testcase classname="my_class3" name="My class 3" time="0.3"/>
+    </testsuite>
+    <testsuite failures="1" name="My test suite 2" package="My package 2" tests="1" time="0.4">
+        <testcase classname="My class2" name="My class 2" time="0.4"/>
+    </testsuite>
+</testsuites>

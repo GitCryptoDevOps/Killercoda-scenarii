@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body onload="getData()">
+<div id="output"></div>
+<script>
+function getData() {
+  var request = new XMLHttpRequest();
+  request.open('GET', 'http://127.0.0.1:1111/contacts', true);
+  
+  request.onerror = function() {
+    document.getElementById('output').innerHTML = 'Error!';
+  };
+  
+  request.onload = function() {
+    var data = JSON.parse(request.responseText);
+    var output = document.getElementById('output');
+    for (var id in data) {
+      var contact = data [id]['contact'];
+      var div = document.createElement('div');
+      div.appendChild(document.createTextNode(contact));
+      output.appendChild(div);
+    }
+  };
+  
+  request.send();
+};
+</script>
+</body>
+</html>
