@@ -24,7 +24,7 @@ func (AppModuleBasic) RegisterGRPCGatewayRoutes(clientCtx client.Context, mux *r
 }
 ```{{copy}}
 
-Visit again the address http://localhost:1317/hello/hello/hello.
+Visit again the address [http://localhost:1317/hello/hello/hello]({{http://{{TRAFFIC_HOST1_1317}}/hello/hello/hello}}).
 
 A query has been added in the CLI: `cat x/hello/client/cli/query_hello.go`{{open}}.
 

@@ -33,8 +33,12 @@ Verify that:
 
 `curl http://localhost:26657`{{execute}}
 
+[http://localhost:26657/hello/hello/hello]({{http://{{TRAFFIC_HOST1_26657}}}})
+
 - the (high-level) blockchain API is online:
 
 `curl http://localhost:1317`{{execute}}
+
+[http://localhost:1317/hello/hello/hello]({{http://{{TRAFFIC_HOST1_1317}}}})
 
 To stop the blockchain, press `Ctrl-C`.

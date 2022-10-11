@@ -1,18 +1,13 @@
 {
-  "title": "Doxygen",
+  "title": "Ignite Helloworld",
   "description": "",
   "details": {
     "intro": {
       "text": "intro.md",
-      "credits": "Lessons created by Bruno Delb (http://www.DevOpsTestLab.com)"
+      "credits": "Lessons created by Bruno Delb (CryptoDevOps)"
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {"file": "*", "target": "/root"}
-      ]
     },
     "steps": [
       {
